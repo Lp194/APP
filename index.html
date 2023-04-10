@@ -59,10 +59,10 @@
                 <div class="modal-footer">
                     <div class="modal-quantity">
                         <button type="button" onclick="decreaseQuantity()">-</button>
-                        <input type="number" id="quantity" value="1" min="1">
+                        <input type="number" id="quantity" value="1" min="1" oninput="updateTotalPrice()">
                         <button type="button" onclick="increaseQuantity()">+</button>
                     </div>
-                    <button type="button" class="button-add">Adicionar (R$ <span id="item-price">40</span>,00)</button>
+                    <button type="button" class="button-add">Adicionar (R$ <span id="item-price">0,00</span>)</button>
                 </div>
             </div>
         </div>
