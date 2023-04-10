@@ -23,9 +23,9 @@
                 <h2>Cardápio</h2>
                 <div class="search-bar">
                     <div class="search-input-wrapper">
-                        <i class="fa fa-search search-icon" onclick="search()"></i>
+                        <i class="fa fa-search search-icon"></i>
                         <input type="text" placeholder="Busque por um item" name="search"
-                            oninput="toggleClearIcon(this)" onkeyup="checkForEnter(event)">
+                            oninput="toggleClearIcon(this)" onkeyup="checkForElem(event)">
                         <i class="fa fa-times clear-icon" onclick="clearSearch(this)" style="display: none;"></i>
                     </div>
                 </div>
@@ -99,7 +99,11 @@
             toggleClearIcon(input);
             input.focus();
         }
-
+        
+        function checkForElem(event) {
+                search();
+        }
+        
         function search() {
             const input = document.querySelector('[name="search"]');
             const searchTerm = input.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
