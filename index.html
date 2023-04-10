@@ -77,14 +77,13 @@
                 </div>
             </div>
         </div>
-        <div class="modal-erro">
+    </div>
+    <div class="modal-erro">
             <img class="modal-image" src="https://img.myloview.com.br/posters/morto-hamburguer-bonito-caricatura-rapido-alimento-emoji-carater-vetorial-ilustracao-400-92299701.jpg" alt="Item Imagem">
             <div class="modal-info">
                 <h3 class="modal-erro">Item não encontrado</h3>
             </div>
         </div>
-    </div>
-
 
     <script>
         let selectedItemPrice = 0;
@@ -118,7 +117,9 @@
                 if (name.includes(searchTerm)) {
                     card.style.display = 'block';
                 } else {
-                    card.style.display = 'none';
+                    //teste
+                    document.getElementById('modal-erro').style.display = 'none'
+                    card.style.display = 'block';
                 }
             });
 
