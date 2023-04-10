@@ -19,6 +19,17 @@
     <section id="cardapio">
         <div class="main-content grid-one-content">
             <h2>Cardápio</h2>
+            <div id="heading-cardapio">
+                <h2>Cardápio</h2>
+                <div class="search-bar">
+                    <div class="search-input-wrapper">
+                        <i class="fa fa-search search-icon" onclick="search()"></i>
+                        <input type="text" placeholder="Busque por um item" name="search"
+                            oninput="toggleClearIcon(this)" onkeyup="checkForEnter(event)">
+                        <i class="fa fa-times clear-icon" onclick="clearSearch(this)" style="display: none;"></i>
+                    </div>
+                </div>
+            </div>
             <div class="grid">
                 <article class="card">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0xygJBZyuM8Jo2dtz5Bza1G9pe4hG2jSOyxTiUDtTedMYwQ8KMo-reRz7_ZOPTOhyiA&usqp=CAU" alt="Comida 1">
