@@ -100,12 +100,6 @@
             input.focus();
         }
 
-        function checkForEnter(event) {
-            if (event.keyCode === 13) {
-                search();
-            }
-        }
-
         function search() {
             const input = document.querySelector('[name="search"]');
             const searchTerm = input.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
