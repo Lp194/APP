@@ -115,11 +115,10 @@
             cards.forEach(card => {
                 const name = card.querySelector('.name-item').textContent.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
                 if (name.includes(searchTerm)) {
-                    card.style.display = 'block';
+                    card.style.display = 'flex';
                 } else {
-                    //teste
-                    document.getElementById('modal-erro').style.display = 'none'
-                    card.style.display = 'block';
+                    //funcao erro
+                    card.style.display = 'none';
                 }
             });
 
