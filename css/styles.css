@@ -185,10 +185,6 @@ p {
     background-color: rgba(255, 157, 1, 0.2);
 }
 
-
-
-
-
 input[type="checkbox"] {
     -webkit-appearance: none;
     /* Remove a aparência padrão do checkbox */
@@ -289,7 +285,6 @@ img {
     height: auto;
 }
 
-.tag-cost-item,
 .cost-item {
     color: #2ecc71;
 }
